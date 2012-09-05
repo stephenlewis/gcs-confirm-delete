@@ -20,7 +20,7 @@ function replaceDeleteButton(originalDeleteButton) {
   originalDeleteButton.style.display = "none";
 
   newDeleteButton.addEventListener('click', function() {
-    if(confirm("Are you sure you want to delete the selected items?")) {
+    if(confirm("Are you sure you want to delete the selected item(s)?")) {
       originalDeleteButton.click();
     }
   });
